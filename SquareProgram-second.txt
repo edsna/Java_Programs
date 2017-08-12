@@ -1,0 +1,31 @@
+public class square{
+  private String color = "White";
+  private int side = 0;
+  
+  public void displayInfo(){
+    System.out.println(color+ " Square");
+    System.out.println( "Side:  "+ side);
+    System.out.println();
+  }
+  
+  public void setColor(String newColor){
+    color = newColor;
+    System.out.println("Changed Color");
+    displayInfo();
+  }
+  
+  public void setSide(int s){
+    side = s;
+    System.out.println("Change Length of Side");
+    displayInfo();
+  }
+  
+  public int getArea(){
+    int area;
+    
+    area = side * side;
+    return area;
+  }
+  
+}
+  
